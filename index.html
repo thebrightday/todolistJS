@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>투두리스트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Redressed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+    </style>
+</head>
+<body>
+    <form class="hidden" id="login-form">
+        <input 
+            required
+            maxlength="15"
+            type="text" placeholder="what is your name?">
+        <input type="submit" value="log In">
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <form id="todo-form">
+        <input type="text" placeholder="투두를 입력하세요" style="font-size:30px; text-align:center; width:500px; height:50px; 
+        border:0 solid black; border-radius:10%; opacity:50%; "; required>
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
